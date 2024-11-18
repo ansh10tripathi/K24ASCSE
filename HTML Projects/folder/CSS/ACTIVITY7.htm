@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Card</title>
+     <style>
+    body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 80px;
+    border: 1px solid black;
+    width: 40%;
+    height: 100%;
+    border-radius: 10px;
+    padding: 10px;
+    align-items: center;
+    border-spacing: 20px;
+    border-collapse: separate;
+    
+
+}
+
+.profile-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 500px;
+    text-align: center;
+    overflow: hidden;
+    padding: 20px;
+    border-collapse: separate;
+    margin: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    
+}
+.intro{
+    background-color: rgb(42, 119, 243);
+    color: white;
+    border: 1px solid rgb(42, 119, 243);
+    border-radius: 10px;
+    text-align: left;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+.intro span{
+    color: yellow;
+}
+
+.profile-header {
+    background-color: green;
+    color: white;
+    padding: 20px; 
+    border: 1px solid green;
+    border-radius: 10px;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.profile-header img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.profile-content {
+    background-color: orange;
+    color: white;
+    padding: 20px;
+    border: 1px solid orange;
+    border-radius: 10px;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.skills-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.skills-list li {
+    margin: 10px 0;
+}
+
+.contact-info {
+    background-color: purple;
+    color: white;
+    padding: 20px;
+    border: 1px solid black;
+    /* border-spacing: 5px; */
+    border-collapse: separate;
+    border: 1px solid purple;
+    border-radius: 10px;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.social-links {
+    background-color: orangered;
+    color: rgb(244, 248, 8);
+    padding: 20px;
+    border: 1px solid black;
+    border-spacing: 5px;
+    border-collapse: separate;
+    border: 1px solid orangered;
+    border-radius: 10px;
+    text-align: left;
+}
+.social-links a{
+    color: yellow;
+
+}
+     </style>
+</head>
+<body>
+    <div class="profile-card">
+        <div class="profile-header">
+            <img src="image.png" alt="Profile Picture"></div>
+        <div class="intro">
+            <h1>John Doe</h1>
+            <span>Web Developer</span> at <span> Solutions Ltd.</span>
+        </div>
+        <div class="profile-content">
+            <ul class="skills-list">
+                <li>Passionate about programming languages</li>
+                <li>Experience in HTML, CSS, JavaScript</li>
+                <li>Enjoys teaching code to new learners</li>
+            </ul>
+        </div>
+        <div class="contact-info">
+            <p><strong>Email:</strong> john.doe@example.com</p>
+            <p><strong>Phone:</strong> 9187xxxxxx</p>
+        </div>
+        <div class="social-links">
+            <a href="12sept.htm" class="btn twitter">Twitter</a>
+            <a href="tables.htm" class="btn linkedin">LinkedIn</a>
+        </div>
+    </div>
+</body>
+</html>

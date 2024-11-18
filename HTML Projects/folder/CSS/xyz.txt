@@ -1,0 +1,1 @@
+There is an app called Any Text Widget available for Android that allows you to create simple text widgets. These widgets can be used for various purposes such as notes, goals, or task lists on your home or lock screens. It includes multiple widget options to display different text configurations.

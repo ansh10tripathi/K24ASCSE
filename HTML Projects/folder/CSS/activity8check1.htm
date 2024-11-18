@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marks Table</title>
+     <style>
+     * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        background-color: #000;
+        color: #fff;
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        border-bottom: 1px solid black;
+    }
+
+    .table-container {
+        border: 2px solid #038787; /* Light blue */
+        padding: 20px;
+        border-radius: 15px;
+        text-align: center;
+        width: 400px;
+    }
+
+    h1 {
+        margin-bottom: 20px;
+        color: #FFF;
+        border-bottom: 2px solid #00FFFB; /* Light blue */
+        padding-bottom: 10px;
+        font-size: 24px;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: separate;
+    }
+
+    thead th {
+        background-color: #000;
+        padding: 10px;
+        border: 1px solid #e8f0f0;
+        color: #FFF;
+    }
+
+    tbody td {
+        background-color: #000;
+        padding: 10px;
+        border: 2px double #f4f6f6;
+        border-spacing: 1px;
+        border-bottom: 1px solid black;
+        border-top: 1px solid black;
+    }
+
+    tbody tr:nth-child(even) {
+        background-color: #000;
+    }
+
+    tbody td:hover {
+        /* background-color: lime; Highlight effect for the marks */
+        color: #27e624;
+    }
+
+    thead th:hover {
+        /* background-color: lime; Highlight effect for headers */
+        color: #30e13c;
+        
+    }
+
+    .table-container {
+        border: 2px solid #00FFFB;
+        border-radius: 15px;
+        padding: 20px;
+    }
+
+
+     </style>
+</head>
+<body>
+    <div class="table-container">
+        <h1>Marks table</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Student</th>
+                    <th>Maths</th>
+                    <th>Physics</th>
+                    <th>Computer Science</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Name</td>
+                    <td>54</td>
+                    <td>32</td>
+                    <td>23</td>
+                </tr>
+                <tr>
+                    <td>Name</td>
+                    <td>54</td>
+                    <td>32</td>
+                    <td>23</td>
+                </tr>
+                <tr>
+                    <td>Name</td>
+                    <td>54</td>
+                    <td>32</td>
+                    <td>23</td>
+                </tr>
+                <tr>
+                    <td>Name</td>
+                    <td>54</td>
+                    <td>32</td>
+                    <td>23</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

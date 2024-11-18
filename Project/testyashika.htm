@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+    :root {
+    --primary-color: #5b8094;
+    --secondary-color: #5b8094;
+    --background-color:#87b1c8;
+    --text-color: #87b1c8;
+    --accent-color: #ff6b6b;
+   }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  header {
+    background: linear-gradient(135deg, var(--primary-color), #5b8094);
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  h1 {
+    font-size: 2.8rem;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  nav ul li {
+    display: inline;
+    margin: 0 15px;
+  }
+
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+  }
+
+  nav ul li a:hover {
+    color: var(--accent-color);
+  }
+
+  main {
+    padding: 60px 0;
+  }
+
+  .hero {
+    text-align: center;
+    margin-bottom: 60px;
+    background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.7)), url('https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+    background-size: cover;
+    background-position: center;
+    padding: 80px 20px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  }
+
+  .hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: var(--primary-color);
+  }
+
+  .cta-button {
+    display: inline-block;
+    background: linear-gradient(135deg, var(--secondary-color), #153a50);
+    color: white;
+    padding: 14px 28px;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .cta-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+
+  .features {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 60px;
+  }
+
+  .feature {
+    flex-basis: calc(33.333% - 30px);
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+    margin-bottom: 30px;
+    transition: all 0.3s ease;
+  }
+
+  .feature:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+  }
+
+  .feature h3 {
+    font-size: 1.6rem;
+    margin-bottom: 15px;
+    color: var(--primary-color);
+  }
+
+  .subject-career-map {
+    background: white;
+    padding: 60px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+    margin-bottom: 60px;
+  }
+
+  .subject-career-map h2 {
+    font-size: 2.3rem;
+    margin-bottom: 30px;
+    text-align: center;
+    color: var(--primary-color);
+  }
+
+  .map-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .subject {
+    flex-basis: calc(25% - 20px);
+    background: linear-gradient(135deg, var(--primary-color), #5b8094);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .subject:hover {
+    transform: scale(1.05) rotate(2deg);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+  }
+
+  .resources {
+    background: white;
+    padding: 60px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+  }
+
+  .resources h2 {
+    font-size: 2.3rem;
+    margin-bottom: 30px;
+    text-align: center;
+    color: var(--primary-color);
+  }
+
+  .resource-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .resource-item {
+    flex-basis: calc(50% - 30px);
+    margin-bottom: 30px;
+    padding: 30px;
+    background: #f9f9f9;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+  }
+
+  .resource-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+  }
+
+  .resource-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: var(--primary-color);
+  }
+
+  footer {
+    background: linear-gradient(135deg, var(--primary-color), rgb(91, 128, 148));
+    color: white;
+    text-align: center;
+    padding: 30px 0;
+    margin-top: 60px;
+  }
+
+  /* 3D Effect Styles */
+  .three-d-container {
+    perspective: 1000px;
+    margin-bottom: 60px;
+  }
+
+  .three-d-box {
+    width: 250px;
+    height: 250px;
+    position: relative;
+    margin: 0 auto;
+    transform-style: preserve-3d;
+    animation: rotate 20s infinite linear;
+  }
+
+  .three-d-box div {
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    background: linear-gradient(135deg, rgba(91, 128, 148, 0.8), rgba(91, 128, 148, 0.8));
+    border: 2px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.8rem;
+    color: white;
+    opacity: 0.9;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  }
+
+  .front { transform: translateZ(125px); }
+  .back { transform: rotateY(180deg) translateZ(125px); }
+  .right { transform: rotateY(90deg) translateZ(125px); }
+  .left { transform: rotateY(-90deg) translateZ(125px); }
+  .top { transform: rotateX(90deg) translateZ(125px); }
+  .bottom { transform: rotateX(-90deg) translateZ(125px); }
+
+  @keyframes rotate {
+    0% { transform: rotateY(0) rotateX(0); }
+    100% { transform: rotateY(360deg) rotateX(360deg); }
+  }
+
+  @media (max-width: 768px) {
+    .feature, .subject, .resource-item {
+      flex-basis: 100%;
+    }
+  }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+          <h1> Career Quest</h1>
+          <nav>
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#subject-career-map">Subject-Career Map</a></li>
+              <li><a href="#resources">Resources</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+    
+      <main class="container">
+        <section id="home" class="hero">
+          <h2>Dream, Plan, Achieve</h2>
+          <p>Explore subjects, map out potential careers, and find the resources you need to succeed.</p>
+          <a href="#subject-career-map" class="cta-button">Start Exploring</a>
+        </section>
+    
+        <div class="three-d-container">
+          <div class="three-d-box">
+            <div class="front">Career</div>
+            <div class="back">Success</div>
+            <div class="right">Explore</div>
+            <div class="left">Learn</div>
+            <div class="top">Grow</div>
+            <div class="bottom">Achieve</div>
+          </div>
+        </div>
+    
+        <section class="features">
+          <div class="feature">
+            <h3>Interest Identification</h3>
+            <p>Discover your passions and strengths through interactive assessments.</p>
+          </div>
+          <div class="feature">
+            <h3>Career Path Mapping</h3>
+            <p>Visualize potential career paths based on your interests and skills.</p>
+          </div>
+          <div class="feature">
+            <h3>Educational Guidance</h3>
+            <p>Find relevant educational programs and courses to support your career goals.</p>
+          </div>
+        </section>
+    
+        <section id="subject-career-map" class="subject-career-map">
+          <h2>Subject-to-Career Map</h2>
+          <div class="map-container">
+            <div class="subject">Mathematics</div>
+            <div class="subject">Computer Science</div>
+            <div class="subject">Biology</div>
+            <div class="subject">Psychology</div>
+            <div class="subject">Business</div>
+            <div class="subject">Art & Design</div>
+            <div class="subject">Engineering</div>
+            <div class="subject">Literature</div>
+          </div>
+        </section>
+    
+        <section id="resources" class="resources">
+          <h2>Career Resources</h2>
+          <div class="resource-list">
+            <div class="resource-item">
+              <h3>Online Courses</h3>
+              <p>Enhance your skills with courses from top universities and institutions.</p>
+              <a href="#" class="cta-button">Explore Courses</a>
+            </div>
+            <div class="resource-item">
+              <h3>Career Counseling</h3>
+              <p>Get personalized advice from experienced career counselors.</p>
+              <a href="#" class="cta-button">Book a Session</a>
+            </div>
+            <div class="resource-item">
+              <h3>Industry Insights</h3>
+              <p>Stay updated with the latest trends and opportunities in various industries.</p>
+              <a href="#" class="cta-button">Read Insights</a>
+            </div>
+            <div class="resource-item">
+              <h3>Networking Events</h3>
+              <p>Connect with professionals and expand your career opportunities.</p>
+              <a href="#" class="cta-button">Find Events</a>
+            </div>
+          </div>
+        </section>
+      </main>
+    
+      <footer>
+        <div class="container">
+          <p>&copy; 2024 Career Quest. All rights reserved.</p>
+        </div>
+      </footer>
+</body>
+</html>

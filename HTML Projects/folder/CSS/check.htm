@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .card{
+            width: 400px;
+            aspect-ratio: 1 / 0.7;
+            border-radius: 8px;
+            position: relative;
+        }
+        .card .image-box img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: 0.5s ease-in-out;
+        }
+        .card::after{
+            content: "";
+            position: absolute;
+            inset: 0;
+            border: 2px solid white;
+            border-radius: inherit;
+            opacity: 0;
+            transition: 0.4s ease-in-out;
+        }
+        .card:hover img{
+            filter: 
+            grayscale(1)
+            brightness(.4);
+        }
+        .card:hover::after{
+            opacity: 1;
+            inset: 20px;
+        }
+        .card:hover .content h2{
+            scale: 1;
+            opacity: 1;
+        }
+        .card:hover .contentp p{
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body >
+    <div class="card">
+        <div class="image-box">
+            <img src="jahhfffhjhbsiudhb xhu.jpg" alt="">
+        </div>
+        <div class="content">
+            <h2>ansh tripathi</h2>
+            <p>Description.....</p>
+        </div> 
+    </div>
+
+</body>
+</html>

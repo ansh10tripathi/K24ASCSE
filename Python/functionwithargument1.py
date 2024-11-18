@@ -1,0 +1,10 @@
+def display(a=50,b=60):
+    print("sum",a+b)
+    print("product",a*b)
+    print("substraction",a-b)
+#x = int(input("x: "))
+#y = int(input("y: "))
+display(10)
+#display(100,500)
+#display(b=200,a=150)
+print("🤗🤗")

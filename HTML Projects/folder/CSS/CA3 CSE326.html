@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .main{
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            border: 5px solid black;
+            padding: 10px;
+            background-color: lightblue;
+            gap: 30px;
+        }
+        .one{
+            width: 90%;
+            border-top: 2px solid black;
+            border-right: 2px solid black;
+            border-left: 2px solid black;
+            border-bottom: 2px dashed black;
+            display: flex;
+            background-color: lightgreen;
+        }
+        ul{
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+            text-decoration: none;
+            list-style: none;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        .two{
+            width: 87%;
+        }
+        table{
+            width: 100%;
+            background-color: bisque;
+        }
+        td{
+            text-align: center;
+        }
+        .box{
+            border-top: dashed 2px black;
+            border-right: dashed 2px black;
+            border-left: dashed 2px black;
+            width: 80px;
+            display: flex;
+            justify-content: center;
+        }
+        .three{
+            background-color: yellow;
+            border: 2px solid black;
+            width: 90%;
+            padding: 10px;
+            gap: 0px;
+        }
+        .form{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            background-image: url(back.jpg); background-size: cover; background-position: center;
+            padding: 10px;
+        }
+        input{
+            width: 100%;
+        }
+        .sub{
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="one">
+            <ul>
+                <li class="box"><a href="#">Home</a></li>
+                <li class="box"><a href="#">Contact Us</a></li>
+                <li class="box"><a href="#">About Us</a></li>
+            </ul>
+        </div>
+        <div class="two">
+            <table border="1px">
+                <center><summary>Table 1.Student Record</summary></center>
+                <tr>
+                    <th>Name</th>
+                    <th>Reg No.</th>
+                    <th>Contact</th>
+                    <th>Degree</th>
+                </tr>
+                <tr>
+                    <td>Aman</td>
+                    <td>12456</td>
+                    <td>1111122222</td>
+                    <td rowspan="2"></td>
+                </tr>
+                <tr>
+                    <td colspan="2"></td>
+                    <td>2222233333</td>
+                </tr>
+                <tr>
+                    <td>Ajay</td>
+                    <td colspan="2"></td>
+                    <td>Btech</td>
+                </tr>
+            </table>
+        </div>
+        <div class="three">
+            <p><u>Contact Us:</u></p>
+            <div class="form">
+                <input type="text" name="" id="name" placeholder="Full Name">
+                <br>
+                <input type="email" name="" id="mail" placeholder="Email">
+                <br>
+                <textarea name="" id="qu" placeholder="Query" rows="3"></textarea><br>
+                <input type="submit" name="" id="submit" value="submit Query" class="sub">
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input[type="text"],[type="number"],[type="email"],[type="password"],[type="review"]{
+            background-color: gold;
+            padding: 5px;
+            font-style: italic;
+            font-family: 'Courier New', Courier, monospace;
+            border: 2px ridge #129cea;
+            border-radius: 10px;
+            align-items: center;
+            color: red;
+            padding-left: 10px;
+
+
+        }
+        label{
+            color: blue;
+            font-size: 20px;
+
+
+        }
+        input[type="submit"],[type="reset"]{
+            color: #129cea;
+            background-color: pink;
+            margin: 50px;
+        }
+
+        input[type="submit"]:hover,[type="reset"]:hover,[type="image"]:hover,[type="button"]:hover{
+
+            transform: scale(1.8);
+            transition: 10s;
+            background-color: purple;
+            color: rgb(24, 227, 17);
+
+        }
+        
+        .grid-container{
+            display: grid;
+            color: red;
+            background-color: aquamarine;
+            border: 3px ridge blue;
+            /* grid-template-columns: auto auto 30%;
+            grid-template-rows: 50px 50px; */
+            grid-template: 200px/ 20% auto 20%;
+            grid-gap: 20px 10px;
+
+        }
+        .grid-items{
+            border: 2px solid rgb(255, 0, 102) ;
+            background-color: bisque;
+            color: blueviolet;
+            padding: 10px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            
+
+        }
+        #item2{
+            /* grid-row-start: 2; */
+            grid-row: 2/ span 3;
+           
+        }
+        #item7{
+            grid-column: 3/ span 3;
+        }
+        /* .L1{
+            color: red;
+            background-color: yellow;
+            
+        } */
+        /* .sub1 :hover{
+            color: red;
+            width: 30px;
+        } */
+
+    </style>
+</head>
+<body>
+    <!-- method="post" -->
+    <form action="" >
+        <label for="name" >Name: </label>
+        <input type="text" id="name" placeholder="Enter name" size="10" maxlength="20" ><br><br>
+        <label for="Roll number" >Roll Number: </label>
+        <input type="number" id="Roll Number:" placeholder="Enter roll number" size="8" maxlength="8"><br><br>
+        <label for="Email" >Email: </label>
+        <input type="email" id="Email" placeholder="Enter Email" ><br><br>
+        <label for="Password" >Password: </label>
+        <input type="password" id="Password" placeholder="Enter Password" size="10" minlength="8"><br><br>
+        <label for="review">Review: </label>
+        <textarea name="review" id="Review" rows="5" cols="25" placeholder="Please write the review" ></textarea>
+        <br><br>
+        <label for="hobby">Choose Your Hobby: </label>
+        <input type="checkbox" id="dance" name="hobby" >
+        <label for="dance">Dancing</label>
+        <input type="checkbox" id="singing" name="hobby" >
+        <label for="singing">Singing: </label>
+        <br><br>
+        <label for="course">Choose your Coursr: </label>
+        <input type="radio" name="course" id="btech" value="btech">
+        <label for="btech">B.Tech</label>
+
+        <input type="radio" name="course" id="bca" value="bca">
+        <label for="bca">BCA</label>
+
+        <input type="radio" name="course" id="mtech" value="mtech">
+        <label for="mtech">M.Tech</M></label>
+
+        <input type="radio" name="course" id="mca" value="mca">
+        <label for="mca">MCA</label>
+        <br><br>
+        <label for="select box tag">Select the State: </label>
+        <select name="selectsel" id="selectsel" size="2" multiple>
+            <option value="choose">Choose State</option>
+            <option value="punjab">Punjab</option>
+            <option value="haryna">Haryna</option>
+            <option value="odisa">Odisa</option>
+            <option value="kerela">Kerela</option>
+            <option value="uttarpradesh" selected>Uttar Pradesh</option>
+            <option value="jammu">Jammu</option>
+        </select>
+        <br><br>
+        <label for="upload">Upload the file: </label>
+        <input type="file" name="File:" accept="image/*">
+        <br><br>
+        <input type="submit" value="Submit Form" class="sub1">
+        <input type="reset" value="Reset" class="sub1">
+        <input type="image" name="image button" value="Image" src="submit button.jpg" height="40px" width="100px">
+        <input type="button" value="Button" class="sub1">
+        
+        
+        <!-- -----------file upload box we use input type accept is used to set the file type------------ -->
+
+    </form>
+
+
+
+    <div class="grid-container">
+        <div class="grid-items">1</div>
+        <div class="grid-items" id="item2">2</div>
+        <div class="grid-items">3</div>
+        <div class="grid-items">4</div>
+        <div class="grid-items">5</div>
+        <div class="grid-items">6</div>
+        <div class="grid-items" id="item7">7</div>
+        <div class="grid-items">8</div>
+        <div class="grid-items">9</div>
+        <div class="grid-items">10</div>
+
+
+    </div>
+    
+</body>
+</html>
+<!-- display
+grid tamplet column 
+grid templete rows 
+grid tamplet
+
+grid row start-->

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <script src = "javascript.js"></script> -->
+     <!-- <script>
+
+        var rollno = 67;
+        console.log(rollno);
+        
+
+     </script> -->
+     <style>
+        body{
+            color: white;
+        }
+     </style>
+</head>
+<body bgcolor="black" >
+    
+<!-- <h1>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore molestias, libero officiis consequuntur ipsa in deleniti facilis iste accusamus? Consectetur reprehenderit impedit quo earum eius recusandae voluptate sapiente pariatur explicabo.</h1> -->
+<script >
+    var rollno = 67;
+    console.log(rollno);
+    // document.write(rollno);
+
+
+    document.write("<h1>Arithmatic operators</h1>");
+
+    var num1= 5;
+    var num2= 10;
+    var add = num1+num2
+    var sub = num2-num1 
+    var exp = num1**num2
+    var mod = num1%num2
+    document.write("The sum pof two numbers: " +add + "<br>");
+    document.write("The substraction pof two numbers: " ,sub , "<br>");
+    document.write("The exponential pof two numbers: " ,exp , "<br>");
+    document.write("The exponential pof two numbers: " , mod , "<br>");
+    document.write(num1++);
+    document.write(num1++);
+    document.write(num1++);
+    document.write(num1++);
+    document.write(num1--);
+
+    document.write("<h1>Comparision operators</h1>");
+    var a= 4;
+    var b= '4';
+
+    document.write((a==b) + "<br>");
+    document.write((a===b) + "<br>");
+    document.write((a!=b) + "<br>");
+    document.write((a!==b) + "<br>");
+    document.write((a>b) + "<br>");
+    document.write((a>=b) + "<br>");
+    document.write((a<b) + "<br>");
+    document.write((a<=b) + "<br>");
+    document.write((a>b) + "<br>");
+    document.write("<h1>Logicak operators</h1>");
+
+    var a= '4';
+    var b= 4;
+    document.write(((a==b)&&(a!=b)) + "<br>");
+    document.write(((a>=b)||(b<=a)) + "<br>");
+
+    document.write("<h1>Ternary operators</h1>");
+
+    var age = 6 ;
+
+    var res = (age>=18)?"Adult":"Minor";
+    document.write(res, "<br>");
+
+
+    var marks = 80;
+
+    var pes = (marks>=20)?"Eligible":"Not Eligible";
+    document.write(pes, "<br>","<br>");
+
+
+    var marks = 50;
+    if(marks>80){
+        document.write("Eligible for test" + "<br>");
+    }
+    else{
+        document.write("Not Eligible for test","<br>","<br>")
+    }
+
+
+    var marks = 60;
+    if (marks>=90){
+        document.write("Grade A")
+    }
+    else if(marks <90 && marks>=80){
+        document.write("Grade B")
+    }
+    else if(marks <80 && marks>=70){
+        document.write("Grade C")
+    }
+    else if(marks <70 && marks>=60){
+        document.write("Grade D")
+    }
+    else{
+        document.write("Not Qualified")
+    }
+    // "<br>""<br>"
+
+    document.write("<h1>Switch statement</h1>","<br>");
+    // "<br>"
+    var a=2;
+    switch(a){
+
+        case 1:
+
+            document.write("Case 1 Executed");
+            break;
+        case 2:
+
+            document.write("Case 2 Executed");
+            break;
+            
+        case 3:
+
+            document.write("Case 3 Executed");
+            break;
+        default:
+            document.write("Case not matched","<br>")
+
+
+    }
+
+    document.write("<h1>for loop</h1>","<br>");
+
+    for(var i=11; i<=20; i++){
+
+        document.write(i+"<br>");
+    }
+
+    document.write("<h1>While statement</h1>","<br>");
+    
+    var j= 31;
+    while(j<41){
+        document.write(j+"<br>");
+        j++;
+    }
+
+    document.write("<h1>Do While statement</h1>","<br>");
+    
+    var k= 41;
+    do{
+        document.write(k)
+            k++
+    }while(k<=50);
+
+    document.write("<h1>Continue statement</h1>","<br>");
+    for(var i = 11; i<=20; i++){
+
+        if(i==16){
+            continue;
+    }
+    document.write(i+"<br>")
+    }
+
+    document.write("<h1>Continue statement</h1>","<br>");
+
+    // alert("Please Fill The name");
+
+    // var val =confirm("Do you want to submit?");
+    // if(val == true){
+    //     document.write("User has clicked on OK button");
+
+    // }
+    // else{
+    //     document.write("User has clicked on Cancel Button");
+    // }
+
+    var name1 = parseInt(prompt("num1","First number"));
+    // document.write(name);
+    var roll =parseInt(prompt("num2", "Second number"));
+    document.write(name1+roll);
+
+    document.write("<h1>Java Script Objects</h1>","<br>");
+
+    var table={
+
+        color: "Black",
+        material: "Wood",
+        width: 90
+    }
+    console.log(table);
+    console.log(table.material);
+    console.log(table.color);
+
+
+    function square(2){
+        
+    }
+    
+</script>
+
+</body>
+</html>

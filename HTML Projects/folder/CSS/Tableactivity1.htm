@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activity of table</title>
+    <style>
+        table, th, td{
+            text-align: center;
+            padding: 5px;
+            height: 60px;
+            font-size: large;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            border: 1px solid;
+            border-collapse: collapse;
+            
+        }
+        .c1{
+            background-color: black;
+            color: white;
+        }
+        .c2{
+            background-color: black;
+            color: white;
+        }
+        .c3{
+            background-color: rgb(162, 32, 32);
+            color: white;
+        }
+        
+    </style>
+</head>
+<body>
+    <table>
+        <caption>A summary of top sites with both paid and free courses</caption>
+        <thead>
+            <tr>
+                <th class="c1">Websites</th>
+                <th class="c3">Certification</th>
+                <th class="c3">Tution</th>
+                <th class="c3">Top Courses</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="c3">Freecode Camp</td>
+                <td>Yes</td>
+                <td>Free</td>
+                <td>Web Development and Design</td>
+            </tr>
+            <tr>
+            <td class="c3">Udemy</td>
+            <td>Yes</td>
+            <td>Paid</td>
+            <td>Python and Machine Language</td>
+            </tr>
+            <tr>
+            <td class="c3">Courcera</td>
+            <td>Yes</td>
+            <td>Free and Paid</td>
+            <td>IoT and AI</td>
+            </tr>
+            <tr>
+                <td class="c3">Total Courses</td>
+                <td colspan="3" class="c2">What are you waiting for? Get Started now for free</td>
+            </tr>
+
+        </tbody>
+    </table>
+</body>
+</html>

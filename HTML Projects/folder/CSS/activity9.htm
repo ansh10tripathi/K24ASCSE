@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activity9</title>
+    <style>
+        body{
+            
+            background-color: grey;
+            /* padding-left: 25%;
+            padding-top: 25%;
+            /* padding-right: 50%; */
+            padding-bottom: 25%; 
+            padding: 20px;
+            padding-right: 1100px;
+            /* width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            padding: 0 10px;
+            border: 2px solid white; */
+            
+            
+        }
+        .border1{
+            background-color: white;
+            height: 100%;
+            border: 2px solid white;
+            border-radius: 10px;
+        }
+        input[type="text"], [type="password"],[type="email"] {
+            color: red;
+
+        }
+        form{
+            padding: 10px;
+        }
+        .heading{
+            padding: 10px;
+        }
+        #submit{
+            background-color: rgb(20, 175, 20);
+            border: 1px solid rgb(20, 175, 20);
+            border-radius: 5px;
+            width: 100%;
+        }
+        #gender{
+            width: 100%;
+            height: 100%;
+        }
+        #password{
+            width: 100%;
+            height: 100%;
+        }
+        #email{
+            width: 100%;
+            height: 100%;
+        }
+        #name{
+            width: 100%;
+            height: 100%;
+        }
+        #Bio{
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="border1">
+    <h2 class="heading">Regestration Form</h2>
+    <form action="">
+        <label for="Name">Name</label><br>
+        <input type="text" id="name"><br><br>
+        <label for="Email">Email</label><br>
+        <input type="email" id="email"><br><br>
+        <label for="Password">Password</label><br>
+        <input type="password" id="password"><br><br>
+        <label for="gender">Gender</label><br>
+        <select id="gender" size="1" >
+            <option value="Select">Select</option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+        </select><br><br>
+        <label for="bio">Bio</label><br>
+        <textarea name="Bio" id="Bio" rows="5" cols="25"></textarea>
+        <br><br>
+        <input type="submit" value="Submit" id="submit">
+
+    </form>
+    </div>
+</body>
+</html>

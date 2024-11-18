@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Card</title>
+    <!-- <link rel="stylesheet" href="style10.css"> -->
+     <style>
+        body{
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            border: 1px solid black;
+            width: 20%;
+            height: 100%;
+            padding: 20px;
+            border-radius: 10px;
+
+        }
+        .card {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            overflow: hidden;
+            text-align: center;
+        }
+        .profile-pic img {
+            
+            object-fit: cover;
+        }
+        .info {
+            padding: 20px;
+        }
+        h1 {
+            font-size: 24px;
+            color: #1ca4e8;
+        }
+        h2 {
+            font-size: 18px;
+            color: #0077cc;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 14px;
+            color: #555;
+            margin-bottom: 15px;
+        }
+        .contact-info p {
+            margin: 5px 0;
+        }
+        .social-links {
+            margin-top: 20px;
+        }
+        .social-links .btn {
+            text-decoration: none;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            margin: 5px;
+            display: inline-block;
+        }
+        .twitter {
+            background-color: #1DA1F2;
+        }
+
+        .linkedin {
+            background-color: #0077b5;
+        }
+       
+     </style>
+</head>
+<body>
+    <div class="card">
+        <div class="profile-pic">
+            <img src="image.png" alt="Profile Picture" height="100" width="100">
+        </div>
+        <div class="info">
+            <h1>John Doe</h1>
+            <h2>Web Developer at Tech Solutions</h2>
+            <p>Passionate about creating innovative web solutions that enhance user experience and functionality. Experienced in HTML, CSS, JavaScript, and responsive design.</p>
+            <div class="contact-info">
+                <p><strong>Email:</strong> john.doe@example.com</p>
+                <p><strong>Phone:</strong> 9187xxxxxx</p>
+            </div>
+            <div class="social-links">
+                <a href="#" class="btn twitter">Twitter</a>
+                <a href="#" class="btn linkedin">LinkedIn</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table,th,td{
+            text-align: center;
+            /* background-color: antiquewhite; */
+            border: 5px red solid;
+            border-collapse: separate;
+            padding:auto;
+            height: 60px;
+            font-size: large;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-style: italic;
+            border-spacing: 5px;
+            /* border-top: blue 10px solid; */
+            /* border-bottom: yellowgreen 10px ridge; */
+            /* border-radius: 20px; */
+            /* background-image: url(background\ image.jpg); */
+            
+
+        }
+        td:hover{
+            background-color: mediumturquoise;
+
+        }
+        th:hover{
+            background-color: rgb(235, 135, 213);
+        }
+        
+    </style>
+</head>
+<body>
+    <!-- <table border="10" bordercolor="purple" cellpadding="20" cellspacing="8" bgcolor="cyan" text-align="center"> -->
+        <table>
+            <colgroup>
+                <col span="2" style="background-color: hotpink;">
+                <col span="2" style="background-color: rgb(20, 245, 61); visibility: hidden;" >
+                <col span="2" style="background-color: rgb(204, 237, 17);">
+            </colgroup>
+        <thead >
+        <tr>
+            <th>Name</th>
+            <th colspan="2">Marks</th>
+            <th>Total Marks</th>
+            <th>Grades</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td rowspan="3">Abhay</td>
+            <td>CA1</td>
+            <td>95</td>
+            <td rowspan="3">273</td>
+            <td rowspan="3">A</td>
+        </tr>
+        <tr>
+            <td>CA2</td>
+            <td>100</td>
+            
+        </tr>
+        <tr>
+            <td>Projects</td>
+            <td>78</td>
+            
+        </tr>
+        <tr>
+            <td rowspan="3">Ria</td>
+            <td>CA1</td>
+            <td>95</td>
+            <td rowspan="3">263</td>
+            <td rowspan="3">A</td>
+        </tr>
+        <tr>
+            <td>CA2</td>
+            <td>98</td>
+            
+        </tr>
+        <tr>
+            <td>Projects</td>
+            <td>70</td>
+            
+        </tr>
+        
+    </tbody>
+       
+        
+    </table>
+</body>
+</html>

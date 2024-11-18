@@ -1,0 +1,8 @@
+n = int(input("n:"))
+S=0
+t=1
+while(t<=n):
+    if t%2!=0:
+        S=S+1
+    t=t+1
+print(S)
